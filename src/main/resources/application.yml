@@ -1,0 +1,22 @@
+logging:
+  level:
+    semifir.kira: TRACE
+  file:
+    path: ./
+    name: spring.log
+
+spring:
+  jpa:
+    database-platform:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/tutures?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
